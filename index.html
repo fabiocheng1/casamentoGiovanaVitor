@@ -16,8 +16,8 @@
 <body>
 
     <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top w-100 ">
+            <div class="container-fluid p-0">
                     <a class="navbar-brand" href="#">Casamento Giovana e Vítor</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
                                 <a class="nav-link" href="#localizacao">Localização</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#orientacoes">Orientações</a>
+                                <a class="nav-link" href="#orientacao">Orientações</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#dresscode">Dress code</a>
@@ -55,6 +55,7 @@
                 </div>
 
             </div>
+        </div>
 
 
         <!-- CARROSSEL -->
@@ -96,28 +97,28 @@
 
                 <div class="col-sm-12 text-center">
 
-                    <h1 class="mb-4">Faltam para o grande dia 💍</h1>
+                    <h1 class="mb-4">Nosso grande dia está chegando! 💍</h1>
 
                         <div class="d-flex justify-content-center gap-4 flex-wrap">
 
                             <div class="contador-box">
                                 <span id="dias">0</span>
-                                <p>Dias</p>
+                                <p style="color: black;">Dias</p>
                             </div>
 
                             <div class="contador-box">
                                 <span id="horas">0</span>
-                                <p>Horas</p>
+                                <p style="color: black;">Horas</p>
                             </div>
 
                             <div class="contador-box">
                                 <span id="minutos">0</span>
-                                <p>Min</p>
+                                <p style="color: black;">Min</p>
                             </div>
 
                             <div class="contador-box">
                                 <span id="segundos">0</span>
-                                <p>Seg</p>
+                                <p style="color: black;">Seg</p>
                             </div>
 
                         </div>
@@ -132,17 +133,17 @@
 
         <!-- SOBRE NÓS -->
 
-        <div class="container-fluid" id="sobrenos">
+        <div class="container-fluid p-0" id="sobrenos">
 
-            <div class="row afastamentoDiv1">
+            <div class="row afastamentoSobrenos">
 
                     <div class="col-sm-6">
-                        <img src="/estilo/fotosDivs/fotoDiv1.png" alt="" class="img-fluid w-100  afastamento ">
+                        <img src="/estilo/fotosDivs/fotoDiv1.png" alt="" class="img-fluid w-100">
                     </div>
                     <div class="col-sm-6">
 
                         <h1 class="text-center ">Sobre nós</h1>
-                        <p class="text-center px-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat temporibus consequatur iusto ex, voluptatibus, facilis optio voluptate deserunt nesciunt exercitationem accusamus velit dignissimos sequi sapiente minus culpa reiciendis vitae saepe blanditiis possimus in enim quisquam? Repellendus impedit quos ut assumenda illum ea perspiciatis deleniti maiores perferendis consectetur id ad numquam minus voluptas, hic quam dolor eius tempore ducimus, non dolores iure! Aut atque alias voluptatum provident autem commodi sit? Placeat aliquam saepe rem ipsum fuga quae delectus dolorem iste rerum odit, esse aliquid fugit sed ducimus! Minima quisquam optio pariatur! Doloremque, ea. Nihil architecto deserunt illum fugit nostrum, corporis excepturi?</p>
+                        <p class="text-center px-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, non impedit. Ipsam doloremque ducimus deserunt enim eos quaerat officiis minima, repellendus voluptates, recusandae cumque ab, atque fugit sunt nostrum sint!</p>
 
 
                         
@@ -155,11 +156,11 @@
 
         <!-- LOCALIZAÇÃO -->
 
-        <div class="container-fluid" id="localizacao">
+        <div class="container-fluid p-0" id="localizacao">
 
             
 
-            <div class="row afastamentoTexto">
+            <div class="row afastamentoLocalizacao">
 
                 <div class="col-sm-12">
                     <h1 class="text-center">Localização</h1>
@@ -190,9 +191,11 @@
 
         <div class="container-fluid" id="dresscode">
 
-            <div class="row">
+            <div class="row afastamentoDresscode">
 
                 <div class="col-sm-12">
+
+                    <h1 class="text-center">Dress code</h1>
 
                     <!-- IMAGEM DRESS CODE -->
 
@@ -215,7 +218,7 @@
        
         <!-- ORIENTAÇÕES CONVIDADOS -->
 
-        <div class="container-fluid afastamentoDiv1" id="orientacoes" >
+        <div class="container-fluid afastamentoOrientacoes" id="orientacoes" >
 
 
             <div class="row">
@@ -269,7 +272,7 @@
     
         <script>
             
-            const dataAlvo = new Date("2026-6-12 18:00:00").getTime();
+            const dataAlvo = new Date("2026-7-12 18:00:00").getTime();
 
             function atualizarContador() {
                 const agora = new Date().getTime();
