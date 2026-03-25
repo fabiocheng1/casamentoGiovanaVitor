@@ -1,4 +1,74 @@
 
-.afastamento{
-    margin-top: 29pt;
+.afastamentoCarrossel{
+    margin-top: 90pt;
+    
+}
+
+.afastamentoSobrenos{
+    margin-top: 100pt;
+}
+
+.afastamentoLocalizacao{
+    margin-top: 60pt;
+}
+
+.afastamentoDresscode{
+    margin-top: 50pt;
+}
+
+.afastamentoOrientacoes{
+    margin-top: 80pt;
+}
+
+
+
+body{
+    font-family:  "Playwrite DK Uloopet", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #B4C8BE;
+}
+
+.contador-box {
+    
+    
+    background: #C7D8CF;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 10px 20px black;
+    transition: 0.3s;
+}
+
+.contador-box:hover {
+    transform: scale(1.1);
+}
+
+.contador-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.contador-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #cbd5f5;
+}
+
+/* Responsivo */
+@media (max-width: 576px) {
+    .contador-box {
+        width: 70px;
+        padding: 15px;
+    }
+
+    .contador-box span {
+        font-size: 1.5rem;
+    }
 }
