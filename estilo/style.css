@@ -20,6 +20,24 @@
     margin-top: 80pt;
 }
 
+.afastamentoPresentes{
+    margin-top: 80pt;
+}
+
+.imagemLocal{
+    padding: 0pt;
+    margin: 0pt;
+}
+
+p{
+    font-size: medium;
+    
+}
+
+.justificar{
+    text-align: justify;
+}
+
 
 
 body{
