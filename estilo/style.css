@@ -1,65 +1,58 @@
-
-.afastamentoCarrossel{
-    margin-top: 90pt;
-    
+/* 1. CONFIGURAÇÕES GERAIS */
+body {
+    font-family: "Playwrite DK Uloopet", cursive;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    width: 100%;
 }
 
-.afastamentoSobrenos{
-    margin-top: 100pt;
+/* 2. CARROSSEL (Ajustado para não cortar) */
+.carousel-inner {
+    width: 100%;
 }
 
-.afastamentoLocalizacao{
-    margin-top: 60pt;
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Deixa a imagem definir a altura pela proporção dela */
+    display: block;
 }
 
-.afastamentoDresscode{
-    margin-top: 50pt;
+/* 3. MARGENS E AFASTAMENTOS (Convertidos para px para maior precisão) */
+.afastamentoCarrossel { margin-top: 50px; }
+.afastamentoSobrenos { margin-top: 80px; }
+.afastamentoLocalizacao { margin-top: 80px; }
+.afastamentoDresscode { margin-top: 70px; }
+.afastamentoOrientacoes { margin-top: 80px; }
+.afastamentoPresentes { margin-top: 80px; }
+
+.imagemLocal {
+    padding: 0;
+    margin: 0;
 }
 
-.afastamentoOrientacoes{
-    margin-top: 80pt;
+/* 4. TIPOGRAFIA E TEXTO */
+p {
+    font-size: 1.1rem; /* Use rem para melhor leitura */
 }
 
-.afastamentoPresentes{
-    margin-top: 80pt;
-}
-
-.imagemLocal{
-    padding: 0pt;
-    margin: 0pt;
-}
-
-p{
-    font-size: medium;
-    
-}
-
-.justificar{
+.justificar {
     text-align: justify;
 }
 
-
-
-body{
-    font-family:  "Playwrite DK Uloopet", cursive;
-    margin: 0;
-    padding: 0;
-}
-
-h1{
+h1 {
     color: #B4C8BE;
 }
 
+/* 5. CONTADOR */
 .contador-box {
-    
-    
     background: #C7D8CF;
     color: black;
     padding: 20px;
     border-radius: 15px;
     width: 100px;
     text-align: center;
-    box-shadow: 0 10px 20px black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 
@@ -76,10 +69,10 @@ h1{
 .contador-box p {
     margin: 0;
     font-size: 0.9rem;
-    color: #cbd5f5;
+    color: #555; /* Corrigido para aparecer melhor no fundo claro */
 }
 
-/* Responsivo */
+/* 6. RESPONSIVIDADE */
 @media (max-width: 576px) {
     .contador-box {
         width: 70px;
@@ -89,4 +82,12 @@ h1{
     .contador-box span {
         font-size: 1.5rem;
     }
+    
+    /* Margens menores no celular para não ficar muito vazio */
+    .afastamentoCarrossel, .afastamentoSobrenos { margin-top: 40px; }
 }
+
+footer{
+    background-color:  #C7D8CF; ;
+}
+
